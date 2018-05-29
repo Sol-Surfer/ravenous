@@ -3,7 +3,7 @@ import './Business.css';
 
 class Business extends React.Component {
     render() {
-        let alt = `${this.props.business.name} - ${this.props.business.city}, ${this.props.business.state} Logo`
+        let alt = `${this.props.business.name} - ${this.props.business.city}, ${this.props.business.state} Logo`;
         return (
             <div className="Business">
                 <div className="image-container">
