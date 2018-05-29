@@ -12,7 +12,7 @@ const Yelp = {
             if (jsonResponse.businesses) {
                 return jsonResponse.businesses.map(business => ({
                     id: business.id,
-                    open: business.is_closed,
+                    closed: business.is_closed,
                     imageSrc: business.image_url,
                     name: business.name,
                     address: business.location.address1,
