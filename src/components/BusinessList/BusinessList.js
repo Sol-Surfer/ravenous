@@ -7,9 +7,10 @@ class BusinessList extends React.Component {
         return (
             <div className="BusinessList"> {
                 this.props.businesses.map( function(business) { 
-                    if ( !business.open) {
+                    if ( !business.closed) {
                         return <Business business={business} key={business.id} />
                     }
+                    return '';
                 }) 
             }
             </div>
